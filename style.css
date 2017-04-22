@@ -1,0 +1,236 @@
+/* 
+	box-sizing: border-box 
+	name="viewport" content="width=device-width, initial-scale=1"
+*/
+
+* {
+	box-sizing: border-box;;
+}
+/***************************************Header***************************************/
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	text-align: center;
+}
+#nav-list a:hover {
+	background-color: #c9fadd;
+}
+#nav-list a span {
+	font-size: 1.5em;
+	margin-right: 5px;
+}
+#phone {
+	margin-top: 5px;
+}
+#phone a {
+	text-align: right;
+	padding-bottom: 0px;
+}
+#phone div {
+	text-align: right;
+	padding-right: 25px;
+}
+#header-nav {
+	height: 100px;
+	background-color: black;
+	margin-bottom: 25px;
+}
+#logo-img {
+	background: url(http://good-wallpapers.com/pictures/10692/bigpreview_Military%20Logo.jpg) no-repeat;
+	width: 150px;
+	background-size: cover;
+	height: 80px;
+	width: 150px;
+	margin: 10px 15px 10px 0px;
+}
+.navbar-brand {
+	padding-top: 20px;
+}
+.navbar-brand h1 {
+	color: #337ab7;
+	font-size: 2.5em;
+	font-weight: bold;
+	line-height: 0.75;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-shadow: 1px 1px 1px #222;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar-brand p {
+	color: green;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}
+.navbar-toggle .icon-bar{ 
+	background-color: black;
+	}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #337ab7;
+}
+.navbar-header button.navbar-toggle:hover {
+	background-color: #c9fadd;
+}
+.navbar-header button.navbar-toggle {
+	clear:both;
+	margin-top:-20px;
+}
+
+/***************************************HomePage***************************************/
+
+.container .jumbotron {
+	border: 2px #337ab7 solid;
+}
+#random-tile, #random1-tile, #map-tile {
+	width: 100%;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #337ab7;
+	margin-bottom: 15px;
+}
+#random-tile:hover, #random1-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 5px black;
+}
+#random-tile {
+	background: url(http://good-wallpapers.com/pictures/11814/bigpreview_AAC%20Skulls.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#random1-tile {
+	background: url(http://good-wallpapers.com/wallpapers/26709/bigpreview_US%20Navy%20Seal%20-%20Sunset%20Smoke.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#random-tile span, #random1-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: black;
+	opacity: 0.7;
+	color: #337ab7;
+}
+
+/***************************************Footer***************************************/
+
+.panel-footer {
+	background-color: black;
+	padding-top: 15px;
+	margin-top: 35px;
+	border-top: 0;
+	color: #337ab7;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#hours, #address {
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.2em;
+}
+#address p {
+	line-height: 1.8;
+}
+#reviews {
+	font-style: italic;
+}
+#reviews p:nth-child(2) {
+	margin-top: 20px;
+}
+
+/***************************************Media Queries***************************************/
+
+@media (max-width: 479px) {  /* Super extra small devices */
+	/*** Header ***/
+	.navbar-brand h1 {
+		font-size: 6vw;
+	}
+}
+
+@media (max-width: 767px) { /* Extra small devices */
+	/*** Header ***/ 
+	.navbar-brand {
+		margin-top: 1px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		font-size: 5vw;
+		padding-bo
+	}
+	#call-btn > a {
+		font-size: 1.5em;
+		display: block;
+		margin: 0 20px;
+		padding: 10px;
+		border: 2px solid #337ab7;
+		background-color: black;
+	}
+	#xs-deliver {
+		color: #337ab7;
+		margin-top: 7px;
+		font-size: 1.2em;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+	/*** MainContent ***/
+	.container .jumbotron {
+		padding: 0;
+		margin-top: 30px;
+	}
+	/*** Footer ***/
+	.panel-footer section hr {
+		width: 50%;
+	}
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0
+	}
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* Small devices */ 
+	/*** MainContent ***/
+	.container .jumbotron {
+		background: url(http://i.imgur.com/RCXCETu.jpg);
+		height: 480px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium devices */
+	/*** MainContent ***/
+	.container .jumbotron {
+		background: url(http://i.imgur.com/3rxsZzQ.jpg) no-repeat;
+		height: 620px;
+	}
+}
+
+@media (min-width: 1200px) { /* Large devices */ 
+	/*** MainContent ***/
+	.container .jumbotron {
+		background: url(http://i.imgur.com/H5qVoQX.jpg) no-repeat;
+		height: 750px;
+	}
+}
+
+/***************************************Gallery-Index***************************************/
+
+.gallery-tiles {
+	border: 2px solid black;
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+}
